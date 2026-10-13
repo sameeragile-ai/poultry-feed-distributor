@@ -1,0 +1,6 @@
+{
+  "name": "Ivoire Nutrition Avicole - Caisse & Stocks",
+  "description": "Application point de vente et gestion de stocks pour distributeur d'aliments avicoles en Côte d'Ivoire.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

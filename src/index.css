@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FAF8F5;
+    color: #212529;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    touch-action: manipulation;
+    overflow-x: hidden;
+  }
+
+  /* Ensure tabular figures for financial numbers and tables */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom scrollbars for clean tablet UI */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #E5E0D8;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C8C0B5;
+}
+
+/* Restrained warm terracotta gradient */
+.bg-warm-terracotta {
+  background: linear-gradient(135deg, #B84A28 0%, #D97724 100%);
+}
+
+.bg-warm-terracotta-subtle {
+  background: linear-gradient(135deg, #FBF6F0 0%, #F5EDE2 100%);
+}
+
+.bg-warm-surface {
+  background-color: #FFFFFF;
+}
+
+.border-warm {
+  border-color: #ECE7DE;
+}
